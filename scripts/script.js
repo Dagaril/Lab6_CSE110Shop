@@ -2,7 +2,7 @@
 
 window.addEventListener('DOMContentLoaded', () => {
   fetchProds();
-  handleProds();
+  //handleProds();
 
 });
 
@@ -13,6 +13,8 @@ async function fetchProds() {
     let respText = await response.text();
     localStorage.setItem('Products', respText);
   }
+
+  handleProds();
 
 }
 
